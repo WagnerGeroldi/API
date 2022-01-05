@@ -6,7 +6,6 @@ const specificationsRoutes = Router()
 
 const specificationsRepository = new SpecificationRepository()
 
-
 specificationsRoutes.post("/", (req, res) => {
     const {name, description} = req.body
     const createSpecificationService = new CreateSpecificationService(specificationsRepository)
